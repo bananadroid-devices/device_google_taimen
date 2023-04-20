@@ -1,17 +1,22 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2880
-TARGET_SCREEN_WIDTH := 1440
+# Inherit some common BananaDroid stuff
+$(call inherit-product, vendor/banana/config/common.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Supported Device Flags. (Features)
+BANANA_BUILD_TYPE := OFFICIAL
+BANANA_MAINTAINER := @asriadirahim
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDE_MATLOG := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := false
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
--include device/google/taimen/device-lineage.mk
-
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_taimen
+PRODUCT_NAME := banana_taimen
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
 PRODUCT_RESTRICT_VENDOR_FILES := false

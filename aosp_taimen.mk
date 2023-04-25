@@ -30,11 +30,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner
 
-# Keep the VNDK APEX in /system partition for Official builds as these branches are
-# expected to have stable API/ABI surfaces, move to /vendor if with GMS to save space.
-ifeq ($(WITH_GMS),true)
-  PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
-endif
+PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android

@@ -6,5 +6,17 @@
    {
       "repository":"vendor_google_taimen",
       "target_path":"vendor/google/taimen"
+   },
+   {
+     "repository": "asriadirahim/packages_apps_googlecamera",
+     "target_path": "packages/apps/GoogleCamera",
+     "branch": "thirteen",
+     "remote": "gitlab"
+   },
+   {
+     "repository": "LineageOS/android_packages_apps_ElmyraService",
+     "target_path": "packages/apps/ElmyraService",
+     "branch": "lineage-20.0",
+     "remote": "github"
    }
 ]

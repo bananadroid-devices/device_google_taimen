@@ -11,6 +11,8 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := false
 TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GAPPS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)

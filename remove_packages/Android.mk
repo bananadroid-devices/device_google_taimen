@@ -11,13 +11,8 @@ LOCAL_OVERRIDES_PACKAGES := \
 		Gallery \
 		Gallery2 \
 		GalleryGo \
-		Etar \
-		Browser2 \
-		CalculatorGooglePrebuilt \
-		CalendarGooglePrebuilt \
-		ExactCalculator \
-		OmniJaws \
-		Recorder \
+		Contacts \
+		Messaging
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := platform

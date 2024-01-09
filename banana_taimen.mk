@@ -19,17 +19,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Vendor firmware
-$(call inherit-product, vendor/firmware/build/core/config.mk)
+$(call inherit-product-if-exists, vendor/firmware/build/core/config.mk)
 
-# Inherit some common EvolutionX stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common BananaDroid stuff
+$(call inherit-product, vendor/banana/config/common.mk)
 
-# EvolutionX Specific Flags
+# Supported Device Flags. (Features)
+BANANA_BUILD_TYPE := OFFICIAL
+BANANA_MAINTAINER := @asriadirahim
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_EXCLUDE_MATLOG := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_GRAMOPHONE := false
-TARGET_BUILD_VIMUSIC := true
-TARGET_IS_PIXEL := true
+WITH_GAPPS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/device.mk)
@@ -46,7 +48,7 @@ PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
-PRODUCT_NAME := evolution_taimen
+PRODUCT_NAME := banana_taimen
 PRODUCT_DEVICE := taimen
 PRODUCT_MODEL := Pixel 2 XL
 

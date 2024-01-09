@@ -181,7 +181,6 @@ product/lib/libdmengine.so
 product/lib/libdmjavaplugin.so
 product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
-product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
 product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 product/priv-app/ConnMO/ConnMO.apk

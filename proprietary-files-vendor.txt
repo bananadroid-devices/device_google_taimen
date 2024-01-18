@@ -307,7 +307,6 @@ vendor/lib/libCB.so
 vendor/lib/libGPTEE.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libQSEEComAPI.so
-vendor/lib/libRSDriver_adreno.so
 vendor/lib/lib_aion_buffer.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
@@ -322,7 +321,6 @@ vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
-vendor/lib/libbccQTI.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libchromatix_imx179_pixel_common.so
 vendor/lib/libchromatix_imx179_pixel_postproc.so
@@ -536,8 +534,6 @@ vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/librilqmiservices.so
 vendor/lib/librmp.so
 vendor/lib/librpmb.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-apis.so
@@ -596,7 +592,6 @@ vendor/lib64/libCB.so
 vendor/lib64/libGPTEE.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/lib_aion_buffer.so
@@ -610,7 +605,6 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
-vendor/lib64/libbccQTI.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libcne.so
@@ -692,8 +686,6 @@ vendor/lib64/librilqmiservices.so
 vendor/lib64/librmnetctl.so
 vendor/lib64/librmp.so
 vendor/lib64/librpmb.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-apis.so

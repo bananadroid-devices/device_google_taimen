@@ -127,17 +127,17 @@ endif
 
 #IMU calibration
 PRODUCT_PROPERTY_OVERRIDES += \
-  persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
+    persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
 
 # Vibrator HAL
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.vibrator.hal.click.duration=10 \
-  ro.vibrator.hal.tick.duration=4 \
-  ro.vibrator.hal.heavyclick.duration=12
+    ro.vibrator.hal.click.duration=10 \
+    ro.vibrator.hal.tick.duration=4 \
+    ro.vibrator.hal.heavyclick.duration=12
 
 # VNDK
 PRODUCT_COPY_FILES += \
-        prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhidlbase-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhidlbase-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhidlbase-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v33.so
